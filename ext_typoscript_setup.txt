@@ -1,0 +1,100 @@
+plugin.tx_media_pi1{
+#	debug = 1
+	paths {
+		partials = EXT:media/res/partials
+		layouts = EXT:media/res/layouts
+		templates = EXT:media/res/templates
+	}
+	types {
+		flvplayer {
+			name = Flash Video Player
+			flexform = EXT:media/res/flexforms/flvplayer.xml
+			template = EXT:media/res/templates/flvplayer.html
+			userfunc = EXT:media/res/userfuncs/class.flvplayer_processing.php:flvplayer_processing
+			context {
+				player = typo3conf/ext/media/res/swf/mediaplayer.swf
+			}
+			defaults{
+				width = 600
+				height = 337
+			}
+			headerData {
+				swfobject = <script type="text/JavaScript" src="typo3conf/ext/media/res/js/swfobject.js"></script>
+			}
+		}
+		pageflip {
+			name = Pageflip
+			flexform = EXT:media/res/flexforms/pageflip.xml
+			template = EXT:media/res/templates/pageflip.html
+			xmltemplate = EXT:media/res/templates/pageflip.xml
+			userfunc = EXT:media/res/userfuncs/class.pageflip_processing.php:pageflip_processing
+			context{
+				player = typo3conf/ext/media/res/swf/pageflip3.6.swf
+			}
+			defaults {
+				width = 682
+				height = 521
+				pageWidth = 315
+				pageHeight = 388
+			}
+			headerData {
+				swfobject = <script type="text/JavaScript" src="typo3conf/ext/media/res/js/swfobject.js"></script>
+			}
+			sizes {
+				normal {
+					maxW = 945
+					maxH = 1164
+				}
+				thumbnail {
+					maxW = 104
+					maxH = 120
+				}
+			}
+		}
+		cu3er {
+			name = Cu3er
+			flexform = EXT:media/res/flexforms/cu3er.xml
+			template = EXT:media/res/templates/cu3er.html
+			xmltemplate = EXT:media/res/templates/cu3er.xml
+			userfunc = EXT:media/res/userfuncs/class.cu3er_processing.php:cu3er_processing
+			context {
+				player = typo3conf/ext/media/res/swf/cu3er.swf
+			}
+			image {
+				width = 720c
+				height = 350c-0
+			}
+			headerData {
+				swfobject = <script type="text/JavaScript" src="typo3conf/ext/media/res/js/swfobject.js"></script>
+			}
+		}
+		feature {
+			name = Feature
+			flexform = EXT:media/res/flexforms/feature.xml
+			template = EXT:media/res/templates/feature.html
+			userfunc = EXT:media/res/userfuncs/class.feature_processing.php:feature_processing
+#			context{}
+			image {
+				10 = IMAGE
+				10.file = GIFBUILDER
+				10.file {
+					XY = 1275,41
+					format = png
+					10 = BOX
+					10.dimensions = 0,0,1275,42
+					10.color = {$theme.highlight}
+				}
+			}
+		}
+		slideshow {
+			name = Slideshow
+			flexform = EXT:media/res/flexforms/slideshow.xml
+			template = EXT:media/res/templates/slideshow.html
+			userfunc = EXT:media/res/userfuncs/class.slideshow_processing.php:slideshow_processing
+			image {
+				width = 600c
+				height = 400c-0
+			}
+		}
+	}
+}

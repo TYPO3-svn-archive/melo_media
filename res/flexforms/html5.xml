@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>HTML5 Video</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<mmFile>
+						<TCEforms>
+							<label>LLL:EXT:cms/locallang_ttc.xml:media.url</label>
+							<config>
+								<type>input</type>
+								<size>60</size>
+								<eval>trim</eval>
+								<default></default>
+								<wizards type="array">
+									<_PADDING>2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>LLL:EXT:cms/locallang_ttc.xml:media.browseUrlTitle</title>
+										<icon>link_popup.gif</icon>
+										<script>browse_links.php?mode=wizard&amp;act=file|url</script>
+										<params type="array">
+											<blindLinkOptions>page,folder,mail,spec</blindLinkOptions>
+											<allowedExtensions>class,swf,swa,dcr,wav,avi,au,mov,asf,mpg,wmv,mp3,mp4,m4v,flv,ogg,ogv</allowedExtensions>
+										</params>
+										<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+							<displayCond>FIELD:mmRenderType:!=:html5</displayCond>
+						</TCEforms>
+					</mmFile>
+				</el>
+			</ROOT>
+		</sDEF> 
+	</sheets>
+</T3DataStructure>

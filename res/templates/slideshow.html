@@ -1,0 +1,11 @@
+<div class="slideshow">
+<f:for each="{flexform.images}" as="image">
+	<f:if condition="{image.link}">
+		<!-- <a href="{image.link}"> -->
+	</f:if>
+			<img src="{image.file}" title="{image.caption}"/>
+	<f:if condition="{image.link}">
+		<!-- </a> -->
+	</f:if>
+</f:for>
+</div>

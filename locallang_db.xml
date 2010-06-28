@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'media'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.CType_pi1">Multimedia</label>
+			<label index="tt_content.tx_media_type">Media Type</label>
+			<label index="types.flvplayer">Flash Video Player</label>
+			<label index="types.html5">HTML5 Video</label>
+			<label index="pages.tabs.media">Media Options</label>
+			<label index="media.file">File</label>
+			<label index="media.poster">Preview</label>
+			<label index="media.options">Media Options</label>
+			<label index="media.files">Files</label>
+			<label index="media.pages">Pages</label>
+			<label index="media.header">Header</label>
+			<label index="media.caption">Caption</label>
+			<label index="media.height">Height</label>
+			<label index="media.width">Width</label>
+			<label index="media.text">Text</label>
+			<label index="media.image">Image</label>
+			<label index="media.link">Links</label>
+			<label index="media.feature">Feature</label>
+		</languageKey>
+	</data>
+</T3locallang>

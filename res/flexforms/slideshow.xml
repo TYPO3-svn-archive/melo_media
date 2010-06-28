@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:media/locallang_db.xml:media.files</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<images>
+						<TCEforms>
+							<label>LLL:EXT:media/locallang_db.xml:media.images</label>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>jpg,png,jpeg,gif</allowed>
+								<maxitems>200</maxitems>
+								<minitems>1</minitems>
+								<show_thumbs>0</show_thumbs>
+							</config>
+						</TCEforms>
+					</images>
+					
+					<caption>
+						<TCEforms>
+							<label>LLL:EXT:media/locallang_db.xml:media.caption</label>
+							<config>
+								<type>text</type>
+							</config>
+						</TCEforms>
+					</caption>
+					
+					<link>
+						<TCEforms>
+							<label>LLL:EXT:media/locallang_db.xml:media.link</label>
+							<config>
+								<type>text</type>
+							</config>
+						</TCEforms>
+					</link>
+					
+					<width>
+						<TCEforms>
+							<label>LLL:EXT:media/locallang_db.xml:media.width</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</width>
+					
+					<height>
+						<TCEforms>
+							<label>LLL:EXT:media/locallang_db.xml:media.height</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</height>
+				</el>
+			</ROOT>
+		</sDEF> 
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,12 @@
+ <div id='media-{row.uid}'>You need Flash to watch this Video</div>
+ 
+<script type='text/javascript'>
+  var so = new SWFObject('{player}','mpl','{flexform.width}','{flexform.height}','9');
+  so.addParam('allowfullscreen','true');
+  so.addParam('allowscriptaccess','always');
+  so.addParam('wmode','opaque');
+  so.addVariable('file','{baseUrl}{flexform.file}');
+  so.addVariable('image','{baseUrl}{flexform.poster}');
+  so.addVariable('stretching','fill');
+  so.write('media-{row.uid}');
+</script>

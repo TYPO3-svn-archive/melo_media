@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PageflipDataSet>
+	<Settings PageWidth="{flexform.pageWidth}"
+			  PageHeight="{flexform.pageHeight}"
+			  AutoSize="true"
+			  
+			  StartPage="1"
+			  AlwaysOpened="false"
+			  
+			  CenterSinglePage="true"
+
+			  RightToLeft="false"
+			  VerticalMode="false"
+			  OffsetX="0"
+			  OffsetY="0"
+			  
+			  PageScale="true"
+			  MaxScale="500"
+			  BaseStageWidth="{flexform.width}"
+			  BaseStageHeight="{flexform.height}"
+			  
+			  Hardcover="false"
+			  Hardpage="false"
+			  EmbossedPages="false"
+			  
+			  LargeCover="false"
+			  
+			  BackContent="false"
+			  BackActive="false"
+			  BackAlwaysVisible="true"
+			  BackContentFixed="false"
+			  
+			  BackgroundColor="0xdFdFdF"
+			  buttonColor="0x333333"
+			  buttonOverColor="0xF0B400"
+			  buttonPressColor="0x333333"
+			  
+			  startAutoFlip="false"
+			  AutoFlipDefaultInterval="5"
+			  AutoFlipLooping="true"
+			  			  
+			  TransparencyEnabled="true"
+			  TransparencyActivePage="true"
+			  
+			  FullScreenEnabled="true"
+			  ButtonHelp="true"
+			  
+			  ZoomOnPageClick="true"
+			  LightBoxZoom="false"
+			  ZoomFollowSpeed="5"
+			  ZoomActivePage="true"
+			  DragZoom="false"
+			  ZoomToTop="true"
+			  ZoomHotspot="true"
+			  
+			  ThumbnailsEnabled="true"		  
+			  LiveThumbnails="true"
+			  ThumbnailsActivePages="true"
+			  ThumbnailWidth="104"
+			  ThumbnailHeight="120"
+			  ThumbnailPadding="20"
+			  ThumbnailBorderWidth="1"
+			  ThumbnailBorderColor="0x333333"
+			  ThumbnailBorderHoverColor="0x333333"			  
+			  			  
+			  HcoverAngle="-30" 
+			  ClickArea="64"
+			  AutoFlipArea="56"
+			  GotoPageSpeed="5"
+			  MousePursuitSpeed="5"
+			  OnReleaseSpeed="5"
+			  TearDistance="80"
+			  FlippingEnabled="true"
+			  
+			  PageCache="5"
+			  UnloadPages="false"
+			  PageLoaderBackColor="0x333333"
+		  	  PageLoaderColor="0x666666"
+		  	  
+			  MouseControl="true">
+			  
+			  <Sounds Enabled="false"/>
+					  
+	</Settings>
+	
+	<PageOrder>
+		<f:for each="{flexform.pages}" as="page">
+			<PageData PageFile="/{page.normal}" ThumbnailFile="/{page.thumb}" LargeFile="/{page.large}" PageName=""/>
+		</f:for>
+	</PageOrder>
+</PageflipDataSet>
